@@ -65,6 +65,13 @@ The API is designed with comprehensive error handling to ensure that meaningful 
 
     module.exports = client;
 
-4. **Start the Server:**
+4. **Register Google Map APIs:**
+   - Create a new project on the [Google Cloud Platform](https://console.cloud.google.com/).
+   - Enable the [Geocoding API](https://console.cloud.google.com/marketplace/product/google/geocoding-backend.googleapis.com).
+   - Create an API key and add it to the `.env` file.
+   ```bash
+   GOOGLE_MAPS_API_KEY=YOUR_API_KEY
+
+5. **Start the Server:**
    ```bash
    npm start
