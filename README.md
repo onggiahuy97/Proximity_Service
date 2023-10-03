@@ -42,12 +42,28 @@ The API is designed with comprehensive error handling to ensure that meaningful 
 
 ### 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/yourusername/business-locator-api.git
+   git clone https://github.com/onggiahuy97/Proximity_Service.git
 
 ### 2. **Install Dependencies:**
    Navigate to the project directory and install the necessary packages.
-   ```bash
-   cd business-locator-api
+   cd Proximity_Service
    npm install
+
+### 3. **Connect to PostgreSQL:**
+```javascript
+const { Client } = require('pg');
+
+const client = new Client({
+    host: 'localhost',
+    user: 'postgres',
+    port: 5432,
+    password: 'password',
+    database: 'postgres'
+});
+
+client.connect();
+
+module.exports = client;
+
 
 ## License
