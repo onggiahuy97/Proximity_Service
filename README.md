@@ -40,30 +40,31 @@ The API is designed with comprehensive error handling to ensure that meaningful 
 
 ## Getting Started
 
-### 1. **Clone the Repository:**
+1. **Clone the Repository:**
    ```bash
    git clone https://github.com/onggiahuy97/Proximity_Service.git
-
-### 2. **Install Dependencies:**
+2. **Install Dependencies:**
    Navigate to the project directory and install the necessary packages.
+   ```bash
    cd Proximity_Service
    npm install
 
-### 3. **Connect to PostgreSQL:**
-```javascript
-const { Client } = require('pg');
+3. **Connect to PostgreSQL:**
+    ```javascript
+    const { Client } = require('pg');
 
-const client = new Client({
-    host: 'localhost',
-    user: 'postgres',
-    port: 5432,
-    password: 'password',
-    database: 'postgres'
-});
+    const client = new Client({
+        host: 'localhost',
+        user: 'postgres',
+        port: 5432,
+        password: 'password',
+        database: 'postgres'
+    });
 
-client.connect();
+    client.connect();
 
-module.exports = client;
+    module.exports = client;
 
-
-## License
+4. **Start the Server:**
+   ```bash
+   npm start
